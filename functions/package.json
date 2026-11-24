@@ -2,7 +2,7 @@
   "name": "foxtrot-functions",
   "description": "Foxtrot Services backend: public quote-form endpoint + key-guarded read for Muse.",
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "main": "index.js",
   "dependencies": {
