@@ -16,8 +16,10 @@
 "use strict";
 
 const functions = require("firebase-functions");
+const { defineSecret } = require("firebase-functions/params");
 const admin = require("firebase-admin");
 
+const foxtrotKey = defineSecret("FOXTROT_KEY");
 admin.initializeApp();
 const db = admin.firestore();
 
@@ -179,7 +181,7 @@ async function handleGet(req, res) {
   }
 }
 
-exports.quote = functions.https.onRequest((req, res) => {
+exports.quote = functions.runWith({ secrets: [foxtrotKey] }).https.onRequest((req, res) => {
   setCors(req, res);
   if (req.method === "OPTIONS") return res.status(204).send("");
   if (req.method === "POST") return handlePost(req, res);
