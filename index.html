@@ -29,9 +29,9 @@ nav{display:flex;flex-wrap:wrap;gap:4px}
 nav a{padding:10px 12px;text-decoration:none;color:#fff;font-weight:700;border-radius:8px;min-height:44px}
 nav a:hover,nav a.on{background:#2d373f}
 nav a.member{background:var(--gold);color:var(--ink)}
-#menu{display:none;min-height:48px;padding:0 16px;font:700 1rem Verdana;background:var(--gold);color:var(--ink);border:0;border-radius:8px}
+#menu{display:none;min-height:48px;padding:0 16px;font:700 1rem Verdana,Tahoma,sans-serif;background:var(--gold);color:var(--ink);border:0;border-radius:8px}
 @media(max-width:860px){#menu{display:block}nav{display:none;width:100%;flex-direction:column}nav.open{display:flex}header .wrap{flex-wrap:wrap}h1{font-size:1.9rem}}
-.btn{display:inline-block;background:linear-gradient(#eceeef,#bcc1c5);color:var(--ink);font:700 1.05rem Verdana;padding:14px 24px;border-radius:10px;text-decoration:none;border:2px solid #10131a;min-height:52px;cursor:pointer}
+.btn{display:inline-block;background:linear-gradient(#eceeef,#bcc1c5);color:var(--ink);font:700 1.05rem Verdana,Tahoma,sans-serif;padding:14px 24px;border-radius:10px;text-decoration:none;border:2px solid #10131a;min-height:52px;cursor:pointer}
 .btn.alt{background:#fff;color:var(--ink);border-color:var(--ink)}.btn.dk{background:var(--dark);color:#fff;border-color:var(--dark)}.vet{display:flex;align-items:center;gap:14px;margin-top:22px}.hero .vet img{width:88px;height:auto;border:0;box-shadow:none;border-radius:0}.vet span{font-size:.95rem}.promise{background:#fff;border:3px solid var(--accent);border-radius:12px;padding:18px 20px;margin:22px 0}.promise h3{color:var(--gd)}.promise small{color:var(--muted)}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
 #p-home{padding-top:0!important}.page{display:none;padding:34px 0 50px}.page.show{display:block}
@@ -56,16 +56,23 @@ input,select,textarea{width:100%;font:inherit;padding:12px;border:2px solid #6b5
 .chk{display:flex;gap:10px;align-items:flex-start;font-weight:400}.chk input{width:26px;height:26px;min-height:0;flex:none}
 .note{background:#fff3cd;border:1px solid #d9b44a;border-radius:10px;padding:12px 16px;font-size:.92rem}
 .legal h2{font-size:1.25rem;margin-top:1.4em}.legal p,.legal li{font-size:.95rem}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tabs button{font:700 .95rem Verdana;padding:10px 16px;border-radius:8px;border:2px solid var(--dark);background:#fff;color:var(--ink);cursor:pointer;min-height:46px}.tabs button[aria-selected=true]{background:var(--dark);border-color:var(--accent);color:#fff}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tabs button{font:700 .95rem Verdana,Tahoma,sans-serif;padding:10px 16px;border-radius:8px;border:2px solid var(--dark);background:#fff;color:var(--ink);cursor:pointer;min-height:46px}.tabs button[aria-selected=true]{background:var(--dark);border-color:var(--accent);color:#fff}
 footer{border-top:4px solid var(--accent);background:var(--dark);color:#ddd;padding:30px 0;font-size:.9rem}footer a{color:var(--gold)}
 footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 .due{color:#9b1c1c;font-weight:700}.paid{color:var(--ok);font-weight:700}
 .hm{display:inline}.callbar{display:none}
 @media(max-width:700px){.hm{display:none}body{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
 .callbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--dark);border-top:3px solid var(--accent);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}
-.callbar a{flex:1;text-align:center;padding:14px 8px;border-radius:10px;font:700 1rem Verdana;text-decoration:none;min-height:50px;background:linear-gradient(#eceeef,#bcc1c5);color:#10131a}
+.callbar a{flex:1;text-align:center;padding:14px 8px;border-radius:10px;font:700 1rem Verdana,Tahoma,sans-serif;text-decoration:none;min-height:50px;background:linear-gradient(#eceeef,#bcc1c5);color:#10131a}
 .callbar a+a{background:var(--accent)}
 .hero .btns .btn{flex:1 1 100%;text-align:center}.page{padding:24px 0 40px}h2{font-size:1.45rem}}
+[hidden]{display:none!important}
+.calc label{margin-top:16px}.qty{display:flex;align-items:center;gap:14px}.qty button{width:54px;height:54px;border-radius:10px;border:2px solid var(--dark);background:#fff;color:var(--ink);font:700 1.6rem Verdana,Tahoma,sans-serif;cursor:pointer}.qty output{min-width:54px;text-align:center;font:700 1.6rem Georgia}.qty span{font-weight:700}
+input[type=range]{-webkit-appearance:none;appearance:none;height:14px;min-height:0;padding:0;border:0;border-radius:8px;background:linear-gradient(90deg,#c3c3c2,#2d4256);margin:22px 0 8px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:40px;height:40px;border-radius:50%;background:var(--accent);border:3px solid var(--dark);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:34px;height:34px;border-radius:50%;background:var(--accent);border:3px solid var(--dark);cursor:pointer}
+.ticks{display:flex;gap:4px}.ticks button{flex:1;background:none;border:0;font:.8rem Verdana,Tahoma,sans-serif;color:var(--muted);cursor:pointer;padding:6px 2px;min-height:48px;text-align:center}.ticks button:first-child{text-align:left}.ticks button:last-child{text-align:right}.ticks .on{color:var(--ink);font-weight:700}
+.out{margin-top:14px}.out th{font:700 1.3rem Georgia}.out td:last-child,.out th:last-child{text-align:right;white-space:nowrap}.out small{display:block;margin:8px 0}
 </style>
 </head>
 <body>
@@ -119,9 +126,9 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <h2>Camera installation: how we install</h2>
 <ul class="ck"><li><b>No wires or cables.</b> We never run wires or cables.</li><li>Outdoor cameras use our connected, <b>solar-powered</b> system</li><li>Indoor setups plug into standard home AC power</li><li>Mounted at safe heights, no higher than <b>[MAX HEIGHT]</b></li><li>Connected to your network and phone app, then tested</li><li>A walkthrough and a printed quick-start guide</li></ul>
 <h3>Service area</h3>
-<p>We serve homes within <b>60 miles</b> of [BASE CITY/ZIP]. Visits beyond 60 miles carry a travel fee of [$__], quoted before you book.</p>
+<p>We serve homes within <b>60 miles</b> of Huntsville, AL. Visits beyond 60 miles carry a travel fee of [$__], quoted before you book.</p>
 <h3>Not included unless quoted</h3>
-<p>Mounting above our height limit, attic or roof work, new outlets or electrical work, Wi-Fi mesh systems, repair of customer-owned equipment, monitoring or emergency dispatch, and third-party cloud subscriptions.</p>
+<p>Mounting above our height limit, attic or roof work, wall-mounting of TVs, new wiring, new outlets or electrical panel work, Wi-Fi mesh systems, repair of customer-owned equipment, monitoring or emergency dispatch, and third-party cloud subscriptions.</p>
 <div class="btns"><a class="btn" href="#quote">Request a Quote</a></div>
 </div></section>
 
@@ -134,11 +141,20 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <div class="card hl"><span class="tag">Includes service calls</span><h3>Option B: Monthly plan</h3><div class="p">Deposit + monthly</div>
 <ul class="ck"><li>Equipment and installation up front</li><li><b>One service call every month</b> for the life of the contract</li><li>Fixed term, set in writing before you sign</li><li>Ownership transfers per your agreement</li></ul></div>
 </div>
-<h3>Add-on services (starting prices)</h3>
-<div class="tw"><table><thead><tr><th>Service</th><th>Unit</th><th>From</th></tr></thead><tbody id="price-rows"></tbody></table></div>
-<p><b>Camera and digital safety prices</b> depend on your home, devices, and needs. Request a quote for an exact price.</p>
+<h2>Build your price</h2>
+<p>Pick a service, then slide to the equipment that fits your budget. The price updates as you go.</p>
+<div class="note" id="pnote" hidden>Sample prices for layout. Confirm every number in the SERVICES list before launch.</div>
+<div class="card calc">
+<label for="csvc" style="margin-top:0">Choose a service</label><select id="csvc"></select>
+<p id="cdesc"></p>
+<div id="qrow"><label>How many?</label><div class="qty"><button type="button" id="qm" aria-label="Fewer">−</button><output id="cq" aria-live="polite">1</output><button type="button" id="qp" aria-label="More">+</button><span id="qu"></span></div></div>
+<div id="sl"><label for="cr">Slide to choose your equipment</label><input type="range" id="cr" min="0" max="2" step="1" value="1"><div class="ticks" id="ticks"></div></div>
+<div class="out" id="cout" aria-live="polite"></div>
+<div class="btns"><button class="btn" id="cquote" type="button">Request this quote</button></div>
+</div>
+<p><b>Digital safety services</b> are priced after a short review of your home and devices.</p>
 <h3>Good to know</h3>
-<ul class="ck"><li>Service area is 60 miles from [BASE CITY/ZIP]. Visits beyond that carry a travel fee of [$__], quoted before booking. Taxes and special equipment are also quoted.</li><li><b>Visit Guarantee:</b> if we can’t complete your task in the time set for your visit, no charge for the visit. <a href="#services">Details</a>.</li><li>VicoHome and other app subscriptions are optional, paid to that company, and not included. Check the current plan and price in your own app.</li><li>Estimates are not final until we confirm your home, Wi-Fi, and mounting locations.</li></ul>
+<ul class="ck"><li>Service area is 60 miles from Huntsville, AL. Visits beyond that carry a travel fee of [$__], quoted before booking. Taxes and special equipment are also quoted.</li><li><b>Visit Guarantee:</b> if we can’t complete your task in the time set for your visit, no charge for the visit. <a href="#services">Details</a>.</li><li>VicoHome and other app subscriptions are optional, paid to that company, and not included. Check the current plan and price in your own app.</li><li>Estimates are not final until we confirm your home, Wi-Fi, and mounting locations.</li></ul>
 <div class="btns"><a class="btn" href="#quote">Get My Quote</a></div>
 </div></section>
 
@@ -151,6 +167,8 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <!-- FAQ -->
 <section class="page" id="p-faq"><div class="wrap">
 <h1>Frequently asked questions</h1>
+<details><summary>Do you install wall-mounted TVs?</summary><p>No. We do not install or mount TVs. We help with setup (apps, remote, sign-ins) after your TV is installed.</p></details>
+<details><summary>What is Foxtrot Cloud Storage?</summary><p>Our own cloud storage for your camera video. You pay once, with no monthly storage fee. Many cloud plans cost $9.99 a month or less, but they keep charging for as long as you keep them, and that adds up. We offer lower-cost options too. Our $400 plan is our recommended best-of-brand choice. Details: [STORAGE AMOUNT / RETENTION / SERVICE LIFE].</p></details>
 <details><summary>Do you run wires or cables?</summary><p>No. We never run wires or cables. Outdoor cameras run on our solar-powered connected system, and indoor setups use a normal AC outlet.</p></details>
 <details><summary>How high will you install a camera?</summary><p>We install no higher than [MAX HEIGHT] so the work is safe and the camera stays easy to reach. If your best spot is higher, we will suggest a safer location.</p></details>
 <details><summary>What is the Visit Guarantee?</summary><p>If we can’t complete your task in the time set for your visit, you pay nothing for that visit. The time is written on your quote first. Some exceptions apply, such as no access to the home. See <a href="#services">Services</a>.</p></details>
@@ -162,52 +180,29 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <details><summary>What is a Digital Safety Checkup?</summary><p>We look at your devices, internet connection, web browser, and passwords, then give you a simple safety score and a plain-language plan. We can make the fixes with you.</p></details>
 <details><summary>Do you need my passwords?</summary><p>Never by text or email. You enter your own passwords yourself. We do not keep them.</p></details>
 <details><summary>Can I rent or have a business?</summary><p>Renters need written permission from the property owner. Ask us about businesses.</p></details>
-<details><summary>What areas do you serve?</summary><p>Homes within 60 miles of [BASE CITY/ZIP]. Beyond 60 miles, a travel fee of [$__] applies. Call to confirm your address.</p></details>
+<details><summary>What areas do you serve?</summary><p>Homes within 60 miles of Huntsville, AL. Beyond 60 miles, a travel fee of [$__] applies. Call to confirm your address.</p></details>
 </div></section>
 
 <!-- QUOTE -->
 <section class="page" id="p-quote"><div class="wrap" style="max-width:720px">
 <h1>Get a quote</h1>
 <p>No cost and no obligation. Or call <a href="tel:+12567495464">256-749-5464</a>.</p>
-<!-- Quote form posts to the Foxtrot quote function (functions/index.js). No Formspree. -->
-<form id="qf" action="https://us-central1-ffmanager-a7075.cloudfunctions.net/quote" method="POST">
+<!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 <label for="n">Full name</label><input id="n" name="name" autocomplete="name" required>
 <label for="e">Email</label><input id="e" type="email" name="email" autocomplete="email" required>
 <label for="t">Phone</label><input id="t" type="tel" name="phone" autocomplete="tel" required>
 <label for="a">Service address (street, city, ZIP)</label><input id="a" name="address" autocomplete="street-address" required>
 <label for="c">Best way to reach you</label><select id="c" name="contact_method"><option>Phone call</option><option>Text message</option><option>Email</option></select>
-<label for="s">What do you need?</label><select id="s" name="service"><option>Camera installation</option><option>Digital Safety Checkup</option><option>Phone scam &amp; fraud protection</option><option>Passwords &amp; identity protection</option><option>Wi-Fi or router help</option><option>Smart TV or device setup</option><option>Phone or tablet help</option><option>Minor home service</option><option>Not sure</option></select>
+<label for="s">What do you need?</label><select id="s" name="service"></select>
 <label for="q">Number of cameras</label><select id="q" name="cameras"><option>0</option><option>1</option><option>2</option><option>3</option><option>4 or more</option></select>
 <label for="pay">Payment preference</label><select id="pay" name="payment"><option>Pay once</option><option>Monthly plan</option><option>Not sure</option></select>
 <label for="o">Do you own the home or have the owner’s permission?</label><select id="o" name="authority"><option>Yes, I own it</option><option>Yes, I have written permission</option><option>No</option></select>
 <label for="m">Anything else we should know?</label><textarea id="m" name="message" rows="4"></textarea>
 <p class="note">Please do not enter passwords or card numbers in this form.</p>
-<input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" value="">
 <label class="chk"><input type="checkbox" name="consent" required><span>I agree that Foxtrot may contact me about this request. I have read the <a href="#privacy">Privacy Policy</a>.</span></label>
 <div class="btns"><button class="btn" type="submit">Send My Request</button></div>
-<p id="qmsg" role="status"></p>
 </form></div></section>
-<script>
-/* ===== QUOTE FORM -> Foxtrot function ===== */
-(function(){
- var f=document.getElementById("qf"),m=document.getElementById("qmsg");
- if(!f)return;
- var URL_="https://us-central1-ffmanager-a7075.cloudfunctions.net/quote";
- f.addEventListener("submit",function(e){
-  e.preventDefault();
-  var b=f.querySelector("button[type=submit]");
-  b.disabled=true;m.textContent="Sending…";
-  var d={};new FormData(f).forEach(function(v,k){d[k]=v});
-  fetch(URL_,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)})
-   .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})})
-   .then(function(x){
-    if(x.ok&&x.j.ok){f.reset();m.textContent="Thanks — we got your request and will be in touch soon. Or call 256-749-5464.";}
-    else{m.textContent=(x.j&&x.j.error)||"Something went wrong. Please call 256-749-5464.";b.disabled=false;}
-   })
-   .catch(function(){m.textContent="Could not send just now. Please call 256-749-5464.";b.disabled=false;});
- });
-})();
-</script>
 
 <!-- LOGIN -->
 <section class="page" id="p-login"><div class="wrap" style="max-width:520px">
@@ -235,16 +230,16 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <section class="page legal" id="p-terms"><div class="wrap" style="max-width:800px">
 <h1>Terms of Service</h1><p><i>Effective [DATE]. Draft: have an Alabama attorney review before use.</i></p>
 <h2>1. Agreement</h2><p>These Terms govern your use of this website and the services of [LEGAL BUSINESS NAME], doing business as Foxtrot (“Foxtrot,” “we,” “us”). By using the site or accepting a quote or work order, you agree to these Terms.</p>
-<h2>2. Services</h2><p>Foxtrot sells and installs wire-free home camera equipment, assists with device and app setup, provides digital safety services (such as safety checkups, device, internet, browser, password, and scam-protection help), and provides related technology and minor home services described in your written quote or work order. Only the services in a signed or accepted work order are owed.</p>
+<h2>2. Services</h2><p>Foxtrot sells and installs wire-free home camera equipment, assists with device and app setup, provides digital safety services (such as safety checkups, device, internet, browser, password, and scam-protection help), and provides related technology and minor home services described in your written quote or work order. Only the services in a signed or accepted work order are owed. Foxtrot does not install or mount televisions; TV services are limited to setup after the TV is installed.</p>
 <h2>3. No monitoring or emergency services</h2><p>Foxtrot is not an alarm-monitoring company. We do not monitor cameras or alerts, dispatch police, fire, or medical responders, or guarantee prevention of crime, loss, injury, or damage. Call 911 in an emergency. Camera systems may fail or miss events because of power, solar charging, internet, Wi-Fi, device, app, or environmental conditions. Digital safety services reduce risk but cannot guarantee protection from fraud, scams, identity theft, or hacking.</p>
 <h2>4. Quotes and estimates</h2><p>Website estimates are not binding. A final quote is binding only when issued in writing by Foxtrot and accepted by you before its stated expiration date. Taxes and additional work are stated before work begins.</p>
 <h2>5. Installation standards</h2><p>Foxtrot installs wire-free equipment only and does not run wires or cables. Outdoor devices use our connected solar-powered system; indoor devices use standard AC outlets you provide. Solar performance depends on sunlight, weather, and placement. Foxtrot installs no higher than [MAX HEIGHT] and may decline or relocate any placement that is unsafe, unsuitable, or out of reach.</p>
 <h2>6. Visit Guarantee</h2><p>If Foxtrot cannot complete the task described in your quote or work order within the visit time stated on it, you will not be charged for that visit. This guarantee does not apply when the delay or failure is caused by lack of access to the home or device, inaccurate information, unsafe conditions, a third-party outage or product limitation, a change to the requested task, or work outside the quoted task. Equipment or materials you have purchased remain payable. [Attorney to confirm wording.]</p>
-<h2>7. Service area and travel fee</h2><p>Standard service is available within 60 miles of [BASE CITY/ZIP]. A travel fee of [$__] applies to visits beyond 60 miles and will be quoted before booking.</p>
+<h2>7. Service area and travel fee</h2><p>Standard service is available within 60 miles of Huntsville, AL. A travel fee of [$__] applies to visits beyond 60 miles and will be quoted before booking.</p>
 <h2>8. Your responsibilities</h2><p>You represent that you own the property or have the owner’s written permission. You are responsible for lawful camera placement and use, including privacy and recording laws, and for providing safe access, power, and internet service. You control your own app accounts and will enter your own passwords.</p>
 <h2>9. Payment</h2><p>One-time purchases are due as stated in your quote. Monthly plans are governed by the Payment Plan Terms and your signed agreement. We do not store card or bank numbers; payments are handled by a third-party processor.</p>
 <h2>10. Monthly service call</h2><p>If your agreement includes a monthly service call, it provides one scheduled visit per calendar month while the contract is active and your account is current. Unused visits do not carry over or have cash value. Visits cover Foxtrot-installed equipment and related app setup. Parts, additional work, and issues outside our scope are quoted and approved before work.</p>
-<h2>11. Third-party products and subscriptions</h2><p>Cameras, apps, and cloud plans (such as VicoHome) are provided by third parties under their own terms, features, and prices, which may change. Optional subscriptions are not included unless stated and are your responsibility. We are not responsible for third-party outages or changes.</p>
+<h2>11. Third-party products and subscriptions</h2><p>Cameras, apps, and cloud plans (such as VicoHome) are provided by third parties under their own terms, features, and prices, which may change. Optional subscriptions are not included unless stated and are your responsibility. We are not responsible for third-party outages or changes. Foxtrot Cloud Storage is Foxtrot’s own storage service for camera video, sold for a one-time payment stated in your Work Order. Storage amount, retention period, and service life: [STORAGE AMOUNT / RETENTION / SERVICE LIFE]. Refund terms: [REFUND TERMS].</p>
 <h2>12. Warranty</h2><p>Equipment carries the manufacturer’s warranty. Foxtrot provides a [30]-day limited correction of its installation workmanship. The warranty excludes physical damage, weather, power surges, customer changes, and internet, router, or app problems. These terms do not limit rights you have under law.</p>
 <h2>13. Disclaimer and limitation of liability</h2><p>TO THE EXTENT ALLOWED BY LAW, SERVICES AND THIS SITE ARE PROVIDED “AS IS” EXCEPT AS STATED IN WRITTEN WARRANTIES, AND FOXTROT DISCLAIMS IMPLIED WARRANTIES. FOXTROT IS NOT LIABLE FOR INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, AND TOTAL LIABILITY FOR ANY CLAIM IS LIMITED TO THE AMOUNT YOU PAID FOR THE SERVICE GIVING RISE TO THE CLAIM. Some jurisdictions do not allow certain limits, so they may not apply to you.</p>
 <h2>14. Member accounts</h2><p>Keep your login private and notify us of unauthorized use. We may suspend accounts for misuse. Account pages show information we maintain and may differ from final records until reconciled.</p>
@@ -272,7 +267,7 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 <h2>Information we collect</h2><p>Name, email, phone, service and billing address, contact preferences, services requested, quote and order history, payment status, contract documents, installed-equipment records (model, serial number, location label), and messages you send us. We collect only what we need.</p>
 <h2>What we do not collect or keep</h2><p>We do not ask for or keep your passwords. We do not store card or bank numbers; our payment processor does. We do not record or keep your camera video. You control your camera app account.</p>
 <h2>How we use it</h2><p>To respond to requests, prepare quotes, schedule and complete work, provide your member account, process payments, provide support and warranty service, meet legal obligations, and, if you agree, tell you about other Foxtrot services. You may opt out of marketing at any time.</p>
-<h2>Service providers</h2><p>We share information only with providers who help us operate, such as form handling, account authentication and data hosting (Google Firebase), payment processing, and email or text delivery. We do not sell your personal information.</p>
+<h2>Service providers</h2><p>We share information only with providers who help us operate, such as form handling (Formspree), account authentication and data hosting (Google Firebase), payment processing, and email or text delivery. We do not sell your personal information.</p>
 <h2>Cookies and analytics</h2><p>This site uses only the cookies needed for sign-in. [Add analytics disclosure if used.]</p>
 <h2>Retention and security</h2><p>We keep records as long as needed for service, warranty, tax, and legal purposes, then delete or anonymize them. We use reasonable safeguards, but no system is perfectly secure.</p>
 <h2>Your choices</h2><p>You may request access, correction, or deletion of your information by calling 256-749-5464 or emailing [EMAIL]. Some records must be kept by law.</p>
@@ -290,28 +285,73 @@ footer .fl{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
 
 <script>
 /* ===== EDITABLE CATALOG (prices from owner; null = quote) ===== */
+const T=(...a)=>a.map(([n,p])=>({n,p}));
 const SERVICES=[
- {id:"cam",g:"h",name:"Camera installation",desc:"Wire-free cameras: solar outdoors, plug-in indoors. Mounted, connected, and tested.",unit:"per quote",price:null},
- {id:"wifi",g:"h",name:"Wi-Fi / router setup",desc:"Get every room connected.",unit:"per visit",price:59},
- {id:"tv",g:"h",name:"Smart TV setup",desc:"Apps, remote, and sign-ins.",unit:"per device",price:49},
- {id:"phone",g:"h",name:"Phone / tablet help",desc:"Learn at your own pace.",unit:"30 minutes",price:35},
- {id:"print",g:"h",name:"Printer setup",desc:"Print from phone or computer.",unit:"per device",price:49},
- {id:"smart",g:"h",name:"Smart-device connection",desc:"Plugs, bulbs, doorbells.",unit:"per device",price:25},
- {id:"hand",g:"h",name:"Minor home services",desc:"Hang pictures, curtain rods, simple assembly.",unit:"min. service call",price:59},
- {id:"check",g:"d",name:"Digital Safety Checkup",desc:"We review your device, internet, browser, and passwords, and give you an easy safety score and plan.",unit:"per home",price:null},
- {id:"scam",g:"d",name:"Phone scam & fraud protection",desc:"Block scam calls and texts, spot fake messages, and know what to do if you’re targeted.",unit:"per visit",price:null},
- {id:"device",g:"d",name:"Device protection",desc:"Updates, screen locks, and safe settings for your phone, tablet, and computer.",unit:"per device",price:null},
- {id:"net",g:"d",name:"Internet connection security",desc:"Secure your router and Wi-Fi, and set up a guest network.",unit:"per visit",price:null},
- {id:"browser",g:"d",name:"Web browser safety",desc:"Pop-up blocking, safe settings, and how to recognize fake websites.",unit:"per device",price:null},
- {id:"pass",g:"d",name:"Passwords & identity protection",desc:"Set up a password manager and two-step sign-in. You enter your own passwords.",unit:"per visit",price:null}
+ {id:"cam",g:"h",name:"Camera installation",desc:"Wire-free cameras: solar outdoors, plug-in indoors. Mounted, connected, and tested.",unit:"per camera",u:"camera",max:8,labor:49,tiers:T(["Essential",79],["Standard",129],["Premium",199])},
+ {id:"cloud",g:"h",name:"Foxtrot Cloud Storage",desc:"Our own cloud storage for your camera video. Pay once, with no monthly fee. Many cloud plans cost $9.99 a month or less, forever. We have lower-cost options, and $400 is our recommended best-of-brand plan.",unit:"one-time payment",u:"plan",max:1,labor:0,def:2,pt:"$400 one-time",cloud:1,tiers:T(["Starter",150],["Plus",250],["Recommended: best of brand",400])},
+ {id:"wifi",g:"h",name:"Wi-Fi / router setup",desc:"Get every room connected.",unit:"per home",u:"home",max:1,labor:59,tiers:T(["Use my router",0],["Standard router",89],["Better coverage",149],["Premium",249])},
+ {id:"tv",g:"h",name:"Smart TV setup",desc:"Apps, remote, and sign-ins after your TV is installed. We do not install wall-mounted TVs.",unit:"per TV",u:"TV",max:4,labor:49,tiers:T(["Setup only",0])},
+ {id:"phone",g:"h",name:"Phone / tablet help",desc:"Learn at your own pace.",unit:"per 30 minutes",u:"30-minute session",max:6,labor:35,tiers:T(["Help only",0])},
+ {id:"print",g:"h",name:"Printer setup",desc:"Print from phone or computer.",unit:"per printer",u:"printer",max:3,labor:49,tiers:T(["Setup only",0])},
+ {id:"smart",g:"h",name:"Smart-device connection",desc:"Plugs, bulbs, doorbells.",unit:"per device",u:"device",max:10,labor:25,tiers:T(["Use my device",0],["We supply: basic",15],["We supply: better",30])},
+ {id:"minor",g:"h",name:"Minor home services",unit:"per item",desc:"Smart light installation, light bulb changes, thermostat changes, smart doorbell installation, smart wall switch installation, and door sweeps to save energy. Replacement at your existing locations only. No new wiring.",sub:[
+  {id:"light",name:"Smart light installation",u:"light",max:12,labor:25,tiers:T(["Use my bulbs",0],["Standard smart bulb",12],["Premium smart bulb",25])},
+  {id:"bulb",name:"Light bulb changes",u:"bulb",max:20,labor:10,tiers:T(["Use my bulbs",0],["We supply LED",5])},
+  {id:"thermo",name:"Thermostat change",u:"thermostat",max:3,labor:79,tiers:T(["Use my thermostat",0],["Programmable",70],["Smart",130],["Premium smart",220])},
+  {id:"bell",name:"Smart doorbell installation",u:"doorbell",max:2,labor:69,tiers:T(["Use my doorbell",0],["Standard",79],["Better",129],["Premium",199])},
+  {id:"switch",name:"Smart wall switch installation",u:"switch",max:8,labor:59,tiers:T(["Use my switch",0],["Standard",25],["Better",39],["Premium",55])},
+  {id:"sweep",name:"Door sweep (saves energy)",u:"door",max:6,labor:35,tiers:T(["Use my sweep",0],["Standard sweep",15],["Heavy-duty sweep",28])}]},
+ {id:"check",g:"d",name:"Digital Safety Checkup",desc:"We review your device, internet, browser, and passwords, and give you an easy safety score and plan.",unit:"per home"},
+ {id:"scam",g:"d",name:"Phone scam & fraud protection",desc:"Block scam calls and texts, spot fake messages, and know what to do if you’re targeted.",unit:"per visit"},
+ {id:"device",g:"d",name:"Device protection",desc:"Updates, screen locks, and safe settings for your phone, tablet, and computer.",unit:"per device"},
+ {id:"net",g:"d",name:"Internet connection security",desc:"Secure your router and Wi-Fi, and set up a guest network.",unit:"per visit"},
+ {id:"browser",g:"d",name:"Web browser safety",desc:"Pop-up blocking, safe settings, and how to recognize fake websites.",unit:"per device"},
+ {id:"pass",g:"d",name:"Passwords & identity protection",desc:"Set up a password manager and two-step sign-in. You enter your own passwords.",unit:"per visit"}
 ];
-const HOME_IDS=["cam","check","scam","wifi"];
-const fmt=p=>p==null?"Request a quote":"From $"+p;
+const ITEMS=[];SERVICES.forEach(s=>s.sub?s.sub.forEach(x=>ITEMS.push({...x,g:s.g,desc:"Replacement at your existing location only. No new wiring.",minor:1})):ITEMS.push(s));
+const lbl=x=>(x.minor?"Minor home: ":"")+x.name;
+const money=n=>"$"+n.toLocaleString("en-US",{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2});
+const lo=s=>s.sub?Math.min(...s.sub.map(lo)):s.labor==null?null:s.labor+Math.min(...s.tiers.map(t=>t.p));
+const fmt=s=>s.pt||(lo(s)==null?"Request a quote":"From "+money(lo(s)));
+const HOME_IDS=["cam","cloud","check","scam"];
 document.getElementById("home-tiles").innerHTML=SERVICES.filter(s=>HOME_IDS.includes(s.id)).map(s=>`<div class="card"><h3>${s.name}</h3><p>${s.desc}</p><a href="#quote">Get a quote →</a></div>`).join("");
-const card=s=>`<div class="card"><h3>${s.name}</h3><p>${s.desc}</p><div class="p">${fmt(s.price)}</div><small>${s.unit}</small></div>`;
+const card=s=>`<div class="card"><h3>${s.name}</h3><p>${s.desc}</p><div class="p">${fmt(s)}</div><small>${s.unit}</small></div>`;
 document.getElementById("svc-home").innerHTML=SERVICES.filter(s=>s.g==="h").map(card).join("");
 document.getElementById("svc-digital").innerHTML=SERVICES.filter(s=>s.g==="d").map(card).join("");
-document.getElementById("price-rows").innerHTML=SERVICES.filter(s=>s.price!=null).map(s=>`<tr><td>${s.name}</td><td>${s.unit}</td><td>$${s.price}</td></tr>`).join("");
+const optg=v=>[["h","Home cameras &amp; help"],["d","Digital safety"]].map(([g,l])=>`<optgroup label="${l}">`+ITEMS.map((x,i)=>x.g===g?`<option value="${v?i:lbl(x)}">${lbl(x)}</option>`:"").join("")+"</optgroup>").join("");
+document.getElementById("s").innerHTML=optg(0)+"<option>Not sure</option>";
+
+/* ===== PRICE SLIDER ===== */
+(function(){
+ const PRICES_CONFIRMED=false; /* set to true when all prices above are final */
+ const $=id=>document.getElementById(id),sel=$("csvc"),rg=$("cr"),tk=$("ticks"),out=$("cout");
+ sel.innerHTML=optg(1);$("pnote").hidden=PRICES_CONFIRMED;
+ let cur,q=1,t=0;
+ function pick(i){cur=ITEMS[i];q=1;t=cur.def!=null?cur.def:Math.floor(((cur.tiers||[]).length-1)/2);draw()}
+ function draw(){
+  const x=cur,quote=x.labor==null,n=quote?0:x.tiers.length;
+  $("cdesc").textContent=x.desc;$("qrow").hidden=quote||x.max<2;$("sl").hidden=quote||n<2;
+  $("cq").textContent=q;$("qu").textContent=x.u?x.u+(q>1?"s":""):"";
+  if(quote){out.innerHTML="<p><b>Priced after a short review</b> of your home and devices. Request a quote and we will call you.</p>";return}
+  rg.max=n-1;rg.value=t;rg.setAttribute("aria-valuetext",x.tiers[t].n);
+  tk.innerHTML=x.tiers.map((r,i)=>`<button type="button" data-i="${i}" class="${i===t?"on":""}">${r.n}<br>${money(r.p)}${x.max>1?" each":""}</button>`).join("");
+  const e=x.tiers[t].p*q,l=x.labor*q,tot=e+l,m=q>1?" × "+q:"";
+  let h="<table><tbody>"+(n>1||e?`<tr><td>${x.tiers[t].n}${m}</td><td>${money(e)}</td></tr>`:"")+(l?`<tr><td>Our service${m}</td><td>${money(l)}</td></tr>`:"")+`<tr><th>Estimated total</th><th>${money(tot)}</th></tr></tbody></table><small>Before tax. A travel fee applies beyond 60 miles. Final price is confirmed in your written quote.</small>`;
+  if(x.cloud){const mo=Math.ceil(tot/9.99);h+=`<div class="note"><b>Compare:</b> a cloud plan at $9.99 a month costs $119.88 a year, $359.64 over 3 years, and $599.40 over 5 years, and keeps going. Your one-time ${money(tot)} pays for itself in about ${mo} months (${(mo/12).toFixed(1)} years).</div>`}
+  out.innerHTML=h;
+ }
+ sel.onchange=()=>pick(+sel.value);
+ rg.oninput=()=>{t=+rg.value;draw()};
+ tk.onclick=e=>{const b=e.target.closest("button");if(b){t=+b.dataset.i;draw()}};
+ $("qm").onclick=()=>{q=Math.max(1,q-1);draw()};$("qp").onclick=()=>{q=Math.min(cur.max,q+1);draw()};
+ $("cquote").onclick=()=>{
+  $("s").value=lbl(cur);
+  if(cur.labor!=null){$("m").value="Pricing estimate: "+lbl(cur)+", "+cur.tiers[t].n+(q>1?" × "+q:"")+", about "+money((cur.tiers[t].p+cur.labor)*q)+" before tax.";
+   if(cur.id==="cam")$("q").value=q>3?"4 or more":String(q)}
+  location.hash="#quote";
+ };
+ pick(0);
+})();
 document.getElementById("yr").textContent=new Date().getFullYear();
 
 /* ===== ROUTER ===== */
@@ -372,7 +412,7 @@ function renderAccount(){
  if(tab==="Purchases")h=`<div class="tw"><table><thead><tr><th>Date</th><th>Item</th><th>Amount</th></tr></thead><tbody>${user.purchases.map(x=>`<tr><td>${x.d}</td><td>${x.i}</td><td>${$(x.t)}</td></tr>`).join("")}</tbody></table></div><p><b>Total purchased: ${$(tot)}</b></p>`;
  if(tab==="Payments")h=`<div class="grid"><div class="card"><small>Paid so far</small><div class="p paid">${$(paid)}</div></div><div class="card"><small>Balance owed</small><div class="p due">${$(tot-paid)}</div></div></div><div class="tw"><table><thead><tr><th>Date</th><th>Payment</th><th>Amount</th><th>Status</th></tr></thead><tbody>${user.payments.map(x=>`<tr><td>${x.d}</td><td>${x.n}</td><td>${$(x.a)}</td><td class="${x.s==="Paid"?"paid":"due"}">${x.s}</td></tr>`).join("")}</tbody></table></div>`;
  if(tab==="Contract"){const c=user.contract;h=`<div class="card"><table><tbody><tr><th>Term</th><td>${c.term}</td></tr><tr><th>Monthly payment</th><td>${$(c.monthly)}</td></tr><tr><th>Start / end</th><td>${c.start} to ${c.end}</td></tr><tr><th>Service</th><td>${c.svc}</td></tr><tr><th>Ownership</th><td>${c.own}</td></tr></tbody></table><div class="btns"><a class="btn alt" href="#payment">Plan terms</a><a class="btn" href="tel:+12567495464">Schedule monthly service call</a></div></div>`}
- if(tab==="More Services")h=`<p>Member help, whenever you need it:</p><div class="grid">${SERVICES.filter(s=>s.id!=="cam").map(s=>`<div class="card"><h3>${s.name}</h3><p>${s.desc}</p><div class="p">${fmt(s.price)}</div><a class="btn alt" href="#quote">Request this</a></div>`).join("")}<div class="card"><h3>Add another camera</h3><p>Extend your coverage, wire-free.</p><a class="btn alt" href="#quote">Request a quote</a></div></div>`;
+ if(tab==="More Services")h=`<p>Member help, whenever you need it:</p><div class="grid">${SERVICES.filter(s=>s.id!=="cam").map(s=>`<div class="card"><h3>${s.name}</h3><p>${s.desc}</p><div class="p">${fmt(s)}</div><a class="btn alt" href="#quote">Request this</a></div>`).join("")}<div class="card"><h3>Add another camera</h3><p>Extend your coverage, wire-free.</p><a class="btn alt" href="#quote">Request a quote</a></div></div>`;
  document.getElementById("tabbody").innerHTML=h;
 }
 route();
